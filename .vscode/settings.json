@@ -6,5 +6,9 @@
 	"i18n-ally.defaultNamespace": "index",
 	"files.associations": {
 		"global.css": "tailwindcss"
+	},
+	"svelte.language-server.runtime": "node", // 修复 Antigravity Svelte 编辑器报错
+	"svelte.plugin.svelte.compilerWarnings": {
+		"a11y-media-has-caption": "ignore"
 	}
 }
