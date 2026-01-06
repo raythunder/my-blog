@@ -62,6 +62,29 @@
 	background-color: var(--shiki-dark-bg) !important;
 }
 
+/* Logo theme switching */
+.logo-dark {
+	display: none;
+}
+
+[data-theme="dark"] .logo-light {
+	display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+	display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+	.logo-light {
+		display: none;
+	}
+
+	.logo-dark {
+		display: block;
+	}
+}
+
 @layer base {
 	* {
 		margin: 0;
