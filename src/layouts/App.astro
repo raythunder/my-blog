@@ -1,9 +1,9 @@
 ---
-import { Font, type CssVariable } from "astro:assets";
+import { Font } from "astro:assets";
 
 const { locale, title, subtitle, description, author, article } = Astro.props;
 
-const mainFonts: Record<string, CssVariable> = {
+const mainFonts: Record<string, string> = {
 	en: "--font-noto-serif",
 	"zh-cn": "--font-noto-serif-sc",
 	ja: "--font-noto-serif-jp"
@@ -42,10 +42,21 @@ const localedMainFont = mainFonts[locale];
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 
+		<!-- ZeoSeven Fonts (本地 CSS) -->
+		<link rel="stylesheet" href="/fonts/maple-mono-nf-cn.css" />
+		<link rel="stylesheet" href="/fonts/the-peak-font-plus.css" />
+
+		<!-- Google Fonts -->
 		<Font cssVariable="--font-playwrite-mx" />
-		<Font cssVariable="--font-the-peak-font-plus" />
-		<Font cssVariable="--font-maple-mono-nf-cn" />
-		<Font cssVariable={localedMainFont} />
+		<Font cssVariable={localedMainFont as any} />
+
+		<!-- 定义 ZeoSeven 字体的 CSS 变量 -->
+		<style is:global>
+			:root {
+				--font-maple-mono-nf-cn: "Maple Mono NF CN";
+				--font-the-peak-font-plus: "The Peak Font Plus";
+			}
+		</style>
 
 		<script is:inline>
 			var theme = localStorage.getItem("theme");

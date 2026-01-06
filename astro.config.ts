@@ -34,7 +34,6 @@ import reading from "./src/utils/remark/reading";
 import figure from "./src/utils/remark/figure";
 
 import siteConfig from "./site.config";
-import { ZeoSevenFonts } from "./src/fonts/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -147,18 +146,6 @@ export default defineConfig({
 				display: "block",
 				fallbacks: ["serif"],
 				cssVariable: "--font-playwrite-mx"
-			},
-			{
-				name: "Maple Mono NF CN",
-				provider: ZeoSevenFonts(),
-				fallbacks: ["monospace"],
-				cssVariable: "--font-maple-mono-nf-cn"
-			},
-			{
-				name: "The Peak Font Plus",
-				provider: ZeoSevenFonts(),
-				fallbacks: ["serif"],
-				cssVariable: "--font-the-peak-font-plus"
 			}
 		]
 	}
