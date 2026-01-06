@@ -1,5 +1,6 @@
 ---
 import { Font } from "astro:assets";
+import Analytics from "@vercel/analytics/astro";
 
 const { locale, title, subtitle, description, author, article } = Astro.props;
 
@@ -65,5 +66,6 @@ const localedMainFont = mainFonts[locale];
 	</head>
 	<body>
 		<slot />
+		<Analytics />
 	</body>
 </html>
