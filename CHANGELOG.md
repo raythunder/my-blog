@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.35.0](https://github.com/raythunder/my-blog/compare/v0.34.0...v0.35.0) (2026-01-07)
+
+
+### Features
+
+* 为网站头部添加了支持主题切换的 Logo，并更新了 npm 配置。 ([dc51bed](https://github.com/raythunder/my-blog/commit/dc51bedb0ca8c49e8bf24b83f1c59d291bbb367d))
+* 添加了 Maple Mono NF CN 和 The Peak Font Plus 字体并集成到项目中 ([ca95b19](https://github.com/raythunder/my-blog/commit/ca95b19874b67ead5910ee75de0fc68fdaa92917))
+* 添加反重力笔记及其相关图片 ([668fdd9](https://github.com/raythunder/my-blog/commit/668fdd9455c5751abd8322f6bb08bfd8e2ab314e))
+* 集成 Vercel Analytics 以进行网站分析。 ([6239e6e](https://github.com/raythunder/my-blog/commit/6239e6eb199bca489e95c67b3f276b750ed27e90))
+
+
+### Bug Fixes
+
+* 配置 VS Code Svelte 插件以修复编辑器报错并忽略特定警告。 ([0f8660f](https://github.com/raythunder/my-blog/commit/0f8660f0beceed4871d036a77eee2cea922556af))
+
+
+### Miscellaneous Chores
+
+* 更新网站配置中的站点URL ([0f68897](https://github.com/raythunder/my-blog/commit/0f68897c1bdd298dc9ab35a7fd6fc2e5e15e64d5))
+
 ## [0.34.0](https://github.com/tuyuritio/astro-theme-thought-lite/compare/v0.33.0...v0.34.0) (2026-01-03)
 
 
